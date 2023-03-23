@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.guidiniz.workshopmongo.domain.User;
 import com.guidiniz.workshopmongo.dto.UserDTO;
@@ -26,6 +27,12 @@ public class UserService {
 	
 	public User insert(User obj) {
 		return repo.insert(obj);
+	}
+	
+	@Transactional
+	public void delete(String id) {
+		findById(id);
+		repo.deleteById(id);
 	}
 	
 	public User fromDTO(UserDTO objDto) {
