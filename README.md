@@ -2,7 +2,9 @@
    
  - REST API com Spring Boot e banco MongoDB (web services + NoSQL)
 
- - Um usuario publica um post e nesse post tem comentarios de outros usuarios
+ - Tecnologias/conceitos usados: Java, Spring, MongoDB, NoSQL, MVC, DTO, Maven, Padrão de Camadas, OO, Spring Web.
+
+ - Um usuario publica um post, e nesse post tem comentarios de outros usuarios
 
  - UML:
 
